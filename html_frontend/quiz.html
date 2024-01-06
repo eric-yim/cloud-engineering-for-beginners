@@ -1,0 +1,60 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+
+    <title>Quiz AI</title>
+
+    <link rel="canonical" href="#">
+
+    <!-- Bootstrap core CSS -->
+    <link href="bs/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="quiz/quiz.css" rel="stylesheet">
+  </head>
+
+  <body class="text-left">
+    <div class="row">
+      <div class="col-10 offset-1">
+    <form class="form">
+      
+      <h1 class="h3 mb-3 font-weight-normal">Quiz me, AI!</h1>
+      <label for="selectNumber">Number of Questions:</label>
+        <select id="selectNumber" class="form-control" required="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3" selected="">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+      <label for="inputContent">Copy and Paste content below</label>
+      <textarea id="inputContent" class="form-control" placeholder="Content" rows="5" required=""></textarea>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="generateQuiz(event)">Generate Quiz</button>
+      
+    </form>
+  </div>
+  </div>
+  <hr class="my-4">
+  <div class="row">
+    <div class="col-10 offset-1">
+    <div id="generatedQuiz">
+
+    </div>
+    <p class="mt-5 mb-3 text-muted">© 2024 CodingAI Demos</p>
+</div>
+</div>
+  <script src="quiz/form.js" defer=""></script>
+  </body>
+</html>

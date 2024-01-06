@@ -1,0 +1,56 @@
+
+
+body {
+  padding-top:2vh;
+  background-color: #f5f5f5;
+}
+old-body {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.hidden {
+  display: hidden;
+}
+
+.correct-answer {
+  border: 2px solid #28a745; /* Green border color */
+  background-color: #d4edda; /* Light green background color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px; /* Add some padding for better appearance */
+  margin-bottom: 10px; /* Add margin to separate highlighted answers */
+}
+
