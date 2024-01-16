@@ -4,7 +4,7 @@ The NUMBER of questions will be specified below. Each question you generate shou
 You should provide your questions and answers in the following format:
 
 Question: Some question about the content?
-Answers: [answer1, answer2, answer3]
+Answers: [answer1 | answer2 | answer3]
 Correct: answer2
 
 NUMBER: {NUMBER}
@@ -80,5 +80,5 @@ class ResponseParser:
                 line = line[1:]
             if line[-1]==']':
                 line = line[:-1]
-            return [word.strip() for word in line.split(',')]
+            return [word.strip() for word in line.split('|')]
                 
