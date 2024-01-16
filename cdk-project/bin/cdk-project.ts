@@ -19,7 +19,7 @@ An alternative is to install AWS CLI. Then run "aws configure" to create a local
 const app = new cdk.App();
 new ChatGptWrapperStack(app, 'CdkProject', {
   env: {
-    account: '011879672427',
-    region: 'us-west-1',
+    account: '01234568789',//YOUR AWS ACCOUNT NUMBER
+    region: 'us-west-1',//Choose a region closest to you to reduce latency. As a starter project, this shouldn't matter
   },
 });
