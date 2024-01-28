@@ -1,7 +1,7 @@
 # Cloud Engineering for Beginners
 
 This repo is the code for a demo for the following videos:
-- Youtube
+- [Youtube](https://youtu.be/uAQH2LJNfYQ)
 - Tiktok
 
 ## Layout
