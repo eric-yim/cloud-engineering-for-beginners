@@ -24,8 +24,9 @@ def lambda_handler(event, context):
     
 def get_handler(event, context):
     try:
-        a = [random.random() for _ in range(200000)]
-        a.sort()
+        # This get METHOD IS JUST A DUMMY METHOD
+        #a = [random.random() for _ in range(200000)]
+        #a.sort()
 
         CHOICES = ['hello', 'sunshine', 'serendipity','fun']
         body = CHOICES[random.randint(0,len(CHOICES)-1)]

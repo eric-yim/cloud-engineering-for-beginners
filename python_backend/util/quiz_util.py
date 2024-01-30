@@ -11,8 +11,10 @@ NUMBER: {NUMBER}
 CONTENT: {CONTENT}
 """
 
+CHARACTER_LIMIT = 15000
+
 def prepare_message(NUMBER, CONTENT):
-    return PROMPT_USER.format(**{"NUMBER":NUMBER,"CONTENT":CONTENT})
+    return PROMPT_USER.format(**{"NUMBER":NUMBER,"CONTENT":CONTENT[:CHARACTER_LIMIT]})
 
 def prepare_messages(NUMBER, CONTENT):
     return [

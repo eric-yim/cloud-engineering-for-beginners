@@ -19,7 +19,7 @@ export class ChatGptWrapperStack extends cdk.Stack {
       code: lambda.Code.fromAsset('custom_python.zip'),
       memorySize: 2000, //this is in MB
       timeout: cdk.Duration.seconds(60),
-      logRetention: logs.RetentionDays.ONE_WEEK,
+      logRetention: logs.RetentionDays.ONE_YEAR,
     });
 
 
@@ -98,7 +98,7 @@ export class ChatGptWrapperStack extends cdk.Stack {
       ],
     });
 
-    // Association
+    // Association Uncomment below to add the WebAcl component to your API
     // const cfnWebACLAssociation = new wafv2.CfnWebACLAssociation(this,'WebACLAssociation', {
     //   resourceArn:customPythonApi.deploymentStage.stageArn,
     //   webAclArn: webACL.attrArn,
